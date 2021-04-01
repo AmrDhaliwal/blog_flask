@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, flash, abort
+from flask import Flask, render_template, redirect, url_for, flash, abort, config
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
 from datetime import date
@@ -19,7 +19,7 @@ gravatar = Gravatar(app, size=100, rating="g", default="retro", force_default=Fa
                     base_url=None)
 
 # CONNECT TO DB
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("postgres://ariadrkmhcpjep:caa09779258d17b7a74459b1a698c8ae0d4e53a603a084a7261d92bd0b5d0fd0@ec2-54-198-252-9.compute-1.amazonaws.com:5432/d532hqtm97klkm", "sqlite:///blog.db")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("postgres://ariadrkmhcpjep:caa09779258d17b7a74459b1a698c8ae0d4e53a603a084a7261d92bd0b5d0fd0@ec2-54-198-252-9.compute-1.amazonaws.com:5432/d532hqtm97klkm")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 login_manager = LoginManager()
