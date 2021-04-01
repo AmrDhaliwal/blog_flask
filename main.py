@@ -12,6 +12,7 @@ from flask_gravatar import Gravatar
 import os
 
 app = Flask(__name__)
+app.config.from_object("config.Config")
 app.debug = False
 app.config['SECRET_KEY'] = '8BYkEfBA6O6dufzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
