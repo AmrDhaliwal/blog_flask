@@ -12,7 +12,7 @@ from flask_gravatar import Gravatar
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get(b'.\xe3"\xe04\xef\x02\xa1?\xfb\x1b\xe2(\x98\xc5\xcf')
+app.config['SECRET_KEY'] = os.environ.get('8BYkEfBA6O6dufzWlSihBXox7C0sKR6b')
 ckeditor = CKEditor(app)
 Bootstrap(app)
 gravatar = Gravatar(app, size=100, rating="g", default="retro", force_default=False, force_lower=False, use_ssl=False,
