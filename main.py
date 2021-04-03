@@ -14,7 +14,7 @@ import os
 app = Flask(__name__)
 app.config.from_object("config.Config")
 app.debug = False
-app.config['SECRET_KEY'] = '8BYkEfBA6O6dufzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = 'SECRET_KEY'
 ckeditor = CKEditor(app)
 Bootstrap(app)
 gravatar = Gravatar(app, size=100, rating="g", default="retro", force_default=False, force_lower=False, use_ssl=False,
