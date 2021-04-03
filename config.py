@@ -2,5 +2,5 @@ import os
 
 
 class Config:
-    SECRET_KEY = os.environ.get('8BYkEfBA6O6dufzWlSihBXox7C0sKR6b')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
