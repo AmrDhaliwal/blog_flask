@@ -3,4 +3,4 @@
 
 A blog website built using Flask and a bootstrap template.
 
-My blog can be found here :point_right: <a href="https://amrits-blog.herokuapp.com/"></a>
+[My blog can be found here :point_right: ](https://amrits-blog.herokuapp.com/)
